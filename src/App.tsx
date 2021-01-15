@@ -18,6 +18,7 @@ window.addEventListener('beforeinstallprompt', function(e: any) {
 });
 
 btnSave.addEventListener('click', function() {
+  alert()
   if(deferredPrompt !== undefined) {
     // The user has had a postive interaction with our app and Chrome
     // has tried to prompt previously, so let's show the prompt.
@@ -45,7 +46,7 @@ btnSave.addEventListener('click', function() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <button className="add-button">Add to home screen</button>
+        <button style={{display: 'block'}} className="add-button">Add asd home screen</button>
 
       </header>
     </div>
